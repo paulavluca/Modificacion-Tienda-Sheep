@@ -1,0 +1,232 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Poppins:wght@300;400;500&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 13px;
+}
+
+.box{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.slide-img{
+    height: 450px;
+    position: relative;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box{
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: "Montserrat", Sans-serif;
+    align-items: center;
+    justify-items: center;
+}
+
+.type{
+    display: flex;
+    flex-direction: column;
+}
+
+.type a{
+    color: #222222;
+    /* margin: 5px 0px; */
+    /* font-weight: 700; */
+    letter-spacing: 0.5px;
+    padding-right: 0px;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.type span{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: rgba(26, 26, 26, 26, 0.5);
+    text-align: center;
+    font-size: 110%;
+}
+
+.price{
+    color: #333333;
+    font-weight: 400;
+    font-size: 88%;
+    font-family: "Montserrat", Sans-serif;
+    margin-top: 7%;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 248, 250, 0.863);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn:hover{
+    color: #FFFFFF;
+    background-color: #f15f5f;
+    transition: all ease 0.3s;
+}
+
+.overlay{
+    visibility: hidden;
+}
+
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.slider{
+	width:68%;
+    margin-top: 3%;
+    margin-left: 16%;
+    padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 50%;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    font-family: "Montserrat", Sans-serif;
+    color: #535353;
+    text-align: center;
+}
+
+h2, .h2 {
+    font-size: 24px;
+}
+
+.destacados{
+    margin-top: 4%;
+}
+
+.label-dto{
+    position: absolute;
+    background-color: #ff6f61;
+    color: #FFFFFF;
+    width: 30%;
+    top: 8px;  
+    left: 0px;
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 2%;
+    letter-spacing: 0.5;
+    z-index: 0;
+    opacity: 0.9;
+    font-family: "Montserrat", Sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 8px;
+    font-weight: thin;
+}
+
+.label-dto p{
+    top: -40px;
+}
+
+.dto-border-box{
+    display: block !important;
+    border: 1px solid;
+    border-color: rgba(255, 111, 97, 0.3);
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    height: 30px;
+    text-align: center;
+}
+
+.dto-border-box span{
+    text-align: center;
+    color: #ff6f61;
+    /* margin-left: 23%; */
+    padding-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 13px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+/* @media screen {
+     @media (min-width: 1880px){ /*and (max-width: ){ 
+         .slider{
+            width: 68.9%;
+            align-items: center;
+            margin-left:16%;
+        } 
+    }
+
+} */
